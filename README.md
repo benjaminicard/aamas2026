@@ -1,7 +1,9 @@
 
 # Moral Evaluation of Speech Acts — Truthfulness, Lies and Ethical Dilemmas — modeled and implemented with ASP
 
-This repository accompanies our paper submission to [IJCAI 2025](https://2025.ijcai.org). It provides a Python-based implementation of an Answer Set Programming (ASP) framework for modeling and evaluating speech act utterances in high-stakes ethical scenarios. Using Sartre’s The Wall (1939), the framework integrates key moral theories—deontologism, principialism, and consequentialism—to assess the permissibility of speech acts based on speakers' intentions, truth-values of their utterances, moral motives, and outcomes for third parties.
+This repository accompanies our paper submission to [IJCAI 2025](https://2025.ijcai.org). 
+
+It provides a Python-based implementation of an Answer Set Programming (ASP) framework for modeling and evaluating speech act utterances in high-stakes ethical scenarios. Using Sartre’s The Wall (1939), the framework integrates key moral theories—deontologism, principialism, and consequentialism—to assess the permissibility of speech acts based on speakers' intentions, truth-values of their utterances, moral motives, and outcomes for third parties.
 
 ## Table of Contents
 
