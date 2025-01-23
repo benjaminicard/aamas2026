@@ -12,7 +12,6 @@ It provides a Python-based implementation of an Answer Set Programming (ASP) fra
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
-- [Contributing](#contributing)
 
 ## Overview
 
