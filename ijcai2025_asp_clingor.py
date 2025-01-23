@@ -35,10 +35,6 @@ from clyngor import ASP, solve
 # beliefbase(env;p1).
 # 
 # 
-# %situation(s1).
-# %% at(ramon,_)
-# 
-# 
 # % Description of situation s1 (current situation)
 # 
 # %% Beliefs about location
@@ -48,6 +44,8 @@ from clyngor import ASP, solve
 # %% Beliefs about hostility
 # bel(p1,hostile(p2)) :-situation(s1).
 # bel(env,hostile(p2)):-situation(s1).
+# bel(env,murderer(p2)):-situation(s1).
+# %bel(p1,murderer(p2)):-situation(s1).
 # 
 # %% Beliefs about credible locations
 # bel(p1,cred(at(r,madrid), p2)):-situation(s1).
@@ -150,7 +148,7 @@ from clyngor import ASP, solve
 # violated(D,doNotLieExcept) :- act(D,tell(P,F,P2,N)), not bel(P,F), not exception(act(D,tell(P,F,P2,N)),doNotLieExcept).
 # 
 # % Rule stating that Falangists do not deserve truth
-# dontDeserveTruth(P2):- bel(p1,hostile(P2)).
+# dontDeserveTruth(P2):- bel(p1,murderer(P2)).
 # 
 # % First exception rule for lies: lying is permitted if truth is not deserved
 # exception(act(D,tell(P,F,P2,N)),doNotLieExcept):- act(D,tell(P,F,P2,N)), dontDeserveTruth(P2).
@@ -206,6 +204,7 @@ for answer in answers:
 
 # Commented out IPython magic to ensure Python compatibility.
 # #############  PRINCIPIALISM VERSION 2 ####################  +  #############  CONSEQUENTIALISM VERSIONS 1 AND 2 ####################
+# 
 # 
 # # Define program2
 # program2 = """
@@ -311,13 +310,3 @@ for answer in answers:
 #         print(f"Answer Set {m} of program2 for Answer Set {n}:")
 #         for fact in result:
 #             print(fact)
-
-answers_program1 = ASP(program1)
-for n, answer_set in enumerate(answers_program1, start=1):
-    print(f"Processing Answer Set {n} of program1...")
-    print(answer_set)
-    print("Fin AS\n")
-    # Convert answer set to ASP facts
-    facts_from_program1 = answer_set_to_facts(answer_set,n, n==1)
-
-    print(facts_from_program1)
