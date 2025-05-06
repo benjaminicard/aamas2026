@@ -1,7 +1,7 @@
 
-# Moral Evaluation of Speech Acts — Truthfulness, Lies and Ethical Dilemmas — modeled and implemented with ASP
+# Moral Evaluation of Speech Acts — Truthfulness, Lies and Ethical Dilemmas — Modeled and Implemented with ASP
 
-This repository accompanies our paper submission to [IJCAI 2025](https://2025.ijcai.org). 
+This repository accompanies our paper submission to [AIES 2025](https://www.aies-conference.com/2025/). 
 
 It provides a Python-based implementation of an Answer Set Programming (ASP) framework for modeling and evaluating speech act utterances in high-stakes ethical scenarios. Using Sartre’s The Wall (1939), the framework integrates key moral theories—deontologism, principialism, and consequentialism—to assess the permissibility of speech acts based on speakers' intentions, truth-values of their utterances, moral motives, and outcomes for third parties.
 
@@ -43,8 +43,8 @@ The case study examines Jean-Paul Sartre’s *The Wall*, a story set during the 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ijcai2025-asp.git
-   cd ijcai2025-asp
+   git clone https://github.com/yourusername/aies2025-asp.git
+   cd aies2025-asp
    ```
 
 2. Install dependencies:
@@ -58,7 +58,7 @@ The case study examines Jean-Paul Sartre’s *The Wall*, a story set during the 
 1. Define the ethical dilemma in the provided ASP framework.
 2. Run the main script:
    ```bash
-   python ijcai2025_asp_clingor.py
+   python aies2025_asp_clingor.py
    ```
 3. Review the output, which includes computed answer sets and evaluations for each moral theory.
 
@@ -71,7 +71,7 @@ The script evaluates Pablo Ibbieta’s speech acts under different ethical theor
 
 ## Code Structure
 
-- `ijcai2025_asp_clingor.py`: Main script integrating both programs for ethical evaluation.
+- `aies2025_asp_clingor.py`: Main script integrating both programs for ethical evaluation.
 - **Program 1:** Implements deontologism and principialism1, focusing on absolute duties and principled exceptions.
 - **Program 2:** Extends the framework to principialism2, consequentialism1, and consequentialism2, incorporating counterfactual reasoning and utility calculations.
 
